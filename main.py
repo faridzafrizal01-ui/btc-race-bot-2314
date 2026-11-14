@@ -1,7 +1,8 @@
 """BTC race bot: sharp-drop bounce catcher, long only, all-in.
 
-Strategy (validated on this race's dev window: net PnL +$2.98,
-max drawdown 0.26%, 1 round trip; the plain SMA dip-buy that won the
+Strategy (validated on this race's dev window, wire protocol, 2 runs
+byte-identical: net PnL +$2.98, max drawdown 0.26%, 1 round trip
+buy bar 431 -> sell bar 468; the plain SMA dip-buy that won the
 previous race loses on this window, a steady -4.9% bleed, so this bot
 waits for a confirmed bounce instead of buying every dip):
 - Track the 1-minute closes of CBBTC.
